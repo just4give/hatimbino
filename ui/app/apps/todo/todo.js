@@ -2,15 +2,18 @@ app.factory('todoStorage', ['ngStore', function (ngStore) {
     return ngStore.model('todo');
 }]);
 
-app.controller('TodoCtrl', ['$scope', '$location', '$filter', 'todoStorage','$log', 'Todo',
-    function($scope, $location, $filter, todoStorage,$log,Todo) {
+app.controller('TodoCtrl', ['$scope', '$location', '$filter', 'todoStorage','$log','$mdToast', 'Todo','SocketClient','$timeout',
+    function($scope, $location, $filter, todoStorage,$log,$mdToast,Todo,SocketClient,$timeout) {
 
         
 
-        Todo.query(function(data){
+    Todo.query(function(data){
         $log.debug("Todo:",data);
         $scope.todos = data;
         $scope.remainingCount = $filter('filter')(data, {completed: false}).length;
+        SocketClient.subscribe();
+
+
     })
 
     $scope.newTodo = '';
@@ -51,6 +54,7 @@ app.controller('TodoCtrl', ['$scope', '$location', '$filter', 'todoStorage','$lo
             $scope.todos.push(data);
             $scope.newTodo = '';
             $scope.remainingCount++;
+            SocketClient.send("/app/todo","New Todo");
         })
 
     };

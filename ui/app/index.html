@@ -52,6 +52,10 @@
   <!-- loading-bar -->
   <script src="../libs/angular/angular-loading-bar/build/loading-bar.js"></script>
 
+  <!-- socketjs -->
+  <script src="../libs/socket/sockjs-0.3.4.js"></script>
+  <script src="../libs/socket/stomp.js"></script>
+
 <!-- App -->
   <script src="scripts/app.js"></script>
   <script src="scripts/config.js"></script>
@@ -69,7 +73,26 @@
   <script src="scripts/filters/fromnow.js"></script>
   <script src="scripts/services/ngstore.js"></script>
   <script src="scripts/services/ui-load.js"></script>
+  <script src="scripts/socket.service.js"></script>
+<!--  <script>
 
+    function connect() {
+      var socket = new SockJS('http://localhost:8500/hello');
+      stompClient = Stomp.over(socket);
+      stompClient.connect({}, function(frame) {
+
+        console.log('Connected: ' + frame);
+        stompClient.subscribe('/topic/todo', function(greeting){
+          showGreeting(JSON.parse(greeting.body).content);
+        });
+        stompClient.subscribe('/topic/admin', function(greeting){
+          showGreeting(JSON.parse(greeting.body).content);
+        });
+      });
+    }
+
+    connect();
+  </script>-->
 
 </body>
 </html>
