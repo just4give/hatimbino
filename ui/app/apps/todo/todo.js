@@ -54,7 +54,7 @@ app.controller('TodoCtrl', ['$scope', '$location', '$filter', 'todoStorage','$lo
             $scope.todos.push(data);
             $scope.newTodo = '';
             $scope.remainingCount++;
-            SocketClient.send("/app/todo","New Todo");
+            
         })
 
     };

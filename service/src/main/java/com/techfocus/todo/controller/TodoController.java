@@ -2,8 +2,11 @@ package com.techfocus.todo.controller;
 
 import java.util.List;
 
+import javax.annotation.Resource;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.messaging.handler.annotation.SendTo;
+import org.springframework.messaging.simp.SimpMessagingTemplate;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -21,8 +24,11 @@ import com.techfocus.todo.repository.TodoRepository;
 @CrossOrigin
 public class TodoController {
 	
-	@Autowired
+	@Resource
 	private TodoRepository todoRepository;
+	
+	@Resource
+	private SimpMessagingTemplate template;
 	
 	@RequestMapping(value= "/todo", method = RequestMethod.GET)
 	public List<Todo> findAll() throws Exception{
@@ -32,7 +38,11 @@ public class TodoController {
 	
 	@RequestMapping(value= "/todo", method = RequestMethod.POST)
 	public Todo create(@RequestBody Todo todo){
-		return todoRepository.insert(todo);
+		todo = todoRepository.insert(todo);
+		OutboundMessage message = new OutboundMessage("New TODO added");
+		template.convertAndSend("/topic/todo", message);
+		return todo;
+		 
 	}
 	
 	@RequestMapping(value= "/todo/{id}", method = RequestMethod.PUT)

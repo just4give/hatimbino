@@ -20,22 +20,12 @@
     <favorites_list name="ui" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="GruntFile.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GruntFile.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.125">
-              <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+            <state vertical-scroll-proportion="-2.1538463">
+              <caret line="5" column="70" selection-start-line="5" selection-start-column="70" selection-end-line="5" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -44,28 +34,58 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.1764708">
-              <caret line="60" column="45" selection-start-line="60" selection-start-column="45" selection-end-line="60" selection-end-column="45" />
+            <state vertical-scroll-proportion="-5.6792455">
+              <caret line="75" column="51" selection-start-line="75" selection-start-column="51" selection-end-line="75" selection-end-column="51" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="todo.service.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/apps/todo/todo.service.js">
+      <file leaf-file-name="socket.service.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scripts/socket.service.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="66" selection-start-line="7" selection-start-column="66" selection-end-line="7" selection-end-column="66" />
+              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.service.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/scripts/config.service.js">
+      <file leaf-file-name="config.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scripts/config.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+              <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ngstore.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/scripts/services/ngstore.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="16" column="31" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bower.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bower.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.47272727">
+              <caret line="21" column="21" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sockjs-0.3.4.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/libs/socket/sockjs-0.3.4.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -74,9 +94,56 @@
       <file leaf-file-name="todo.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/apps/todo/todo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.26923078">
-              <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.7530562">
+              <caret line="56" column="12" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="12" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="angular-material.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/libs/angular/angular-material/angular-material.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="68.888885">
+              <caret line="11817" column="1" selection-start-line="11817" selection-start-column="1" selection-end-line="11817" selection-end-column="1" />
+              <folding>
+                <marker date="1464098900046" expanded="true" signature="16493:16502" placeholder="..." />
+                <marker date="1464098900046" expanded="true" signature="18661:18739" placeholder="..." />
+                <marker date="1464098900046" expanded="true" signature="18753:18764" placeholder="..." />
+                <marker date="1464098900046" expanded="true" signature="346349:346899" placeholder="..." />
+                <marker date="1464098900046" expanded="true" signature="346391:346547" placeholder="..." />
+                <marker date="1464098900046" expanded="true" signature="346589:346885" placeholder="..." />
+                <marker date="1464098900046" expanded="true" signature="346753:346820" placeholder="..." />
+                <marker date="1464098900046" expanded="true" signature="351070:351088" placeholder="..." />
+                <marker date="1464098900046" expanded="true" signature="421912:423056" placeholder="..." />
+                <marker date="1464098900046" expanded="true" signature="422100:422211" placeholder="..." />
+                <marker date="1464098900046" expanded="true" signature="422247:423023" placeholder="..." />
+                <marker date="1464098900046" expanded="true" signature="422698:422969" placeholder="..." />
+                <marker date="1464098900046" expanded="true" signature="423079:423303" placeholder="..." />
+                <marker date="1464098900046" expanded="true" signature="423916:424055" placeholder="..." />
+                <marker date="1464098900046" expanded="true" signature="424235:425351" placeholder="..." />
+                <marker date="1464098900046" expanded="true" signature="424320:425220" placeholder="..." />
+                <marker date="1464098900046" expanded="true" signature="425429:426283" placeholder="..." />
+                <marker date="1464098900046" expanded="true" signature="426305:426662" placeholder="..." />
+                <marker date="1464098900046" expanded="true" signature="431410:431458" placeholder="..." />
+                <marker date="1464098900046" expanded="true" signature="448339:449372" placeholder="..." />
+                <marker date="1464098900046" expanded="true" signature="448624:449142" placeholder="..." />
+                <marker date="1464098900046" expanded="true" signature="448775:448998" placeholder="..." />
+                <marker date="1464098900046" expanded="true" signature="449048:449122" placeholder="..." />
+                <marker date="1464098900046" expanded="true" signature="449216:449332" placeholder="..." />
+                <marker date="1464098900046" expanded="true" signature="449422:449779" placeholder="..." />
+                <marker date="1464098900046" expanded="true" signature="449894:450308" placeholder="..." />
+                <marker date="1464098900046" expanded="true" signature="450228:450291" placeholder="..." />
+                <marker date="1464098900046" expanded="true" signature="458336:460064" placeholder="..." />
+                <marker date="1464098900046" expanded="true" signature="458511:459634" placeholder="..." />
+                <marker date="1464098900046" expanded="true" signature="459146:459604" placeholder="..." />
+                <marker date="1464098900046" expanded="true" signature="459167:459308" placeholder="..." />
+                <marker date="1464098900046" expanded="true" signature="459405:459487" placeholder="..." />
+                <marker date="1464098900046" expanded="true" signature="459664:460045" placeholder="..." />
+                <marker date="1464098900046" expanded="true" signature="459709:459893" placeholder="..." />
+                <marker date="1464098900046" expanded="true" signature="459730:459873" placeholder="..." />
+                <marker date="1464098900046" expanded="true" signature="459936:460014" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -84,7 +151,7 @@
       <file leaf-file-name="todo.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/apps/todo/todo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.3921568">
+            <state vertical-scroll-proportion="0.0">
               <caret line="47" column="83" selection-start-line="47" selection-start-column="73" selection-end-line="47" selection-end-column="83" />
               <folding />
             </state>
@@ -105,8 +172,11 @@
       <list>
         <option value="$PROJECT_DIR$/app/scripts/config.router.js" />
         <option value="$PROJECT_DIR$/app/scripts/config.service.js" />
-        <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/apps/todo/todo.service.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/app/scripts/config.js" />
+        <option value="$PROJECT_DIR$/app/scripts/socket.service.js" />
         <option value="$PROJECT_DIR$/app/apps/todo/todo.js" />
       </list>
     </option>
@@ -121,10 +191,10 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1" />
-    <option name="y" value="23" />
-    <option name="width" value="1270" />
-    <option name="height" value="755" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -167,6 +237,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -182,6 +253,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="socket" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -260,7 +363,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -273,6 +375,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Development\SpringWorkspace\hatimbino\ui\libs\socket" />
       <recent name="$PROJECT_DIR$/app/apps/todo" />
     </key>
   </component>
@@ -300,6 +403,11 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -332,26 +440,26 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="23" width="1270" height="755" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24979983" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24032739" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Grunt " active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Grunt " active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32880846" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2859477" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -376,10 +484,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bower.json">
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="60" column="45" selection-start-line="60" selection-start-column="45" selection-end-line="60" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/apps/todo/todo.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="66" selection-start-line="7" selection-start-column="66" selection-end-line="7" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/config.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/apps/todo/todo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/apps/todo/todo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="47" column="83" selection-start-line="47" selection-start-column="73" selection-end-line="47" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GruntFile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -388,23 +544,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.125">
-          <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -424,18 +563,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.1764708">
-          <caret line="60" column="45" selection-start-line="60" selection-start-column="45" selection-end-line="60" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/config.service.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -452,22 +583,122 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.41247">
           <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/apps/todo/todo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.3921568">
+        <state vertical-scroll-proportion="0.0">
           <caret line="47" column="83" selection-start-line="47" selection-start-column="73" selection-end-line="47" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/socket/sockjs-0.3.4.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.1538463">
+          <caret line="5" column="70" selection-start-line="5" selection-start-column="70" selection-end-line="5" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.47272727">
+          <caret line="21" column="21" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/angular/angular-material/angular-material.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="68.888885">
+          <caret line="11817" column="1" selection-start-line="11817" selection-start-column="1" selection-end-line="11817" selection-end-column="1" />
+          <folding>
+            <marker date="1464098900046" expanded="true" signature="16493:16502" placeholder="..." />
+            <marker date="1464098900046" expanded="true" signature="18661:18739" placeholder="..." />
+            <marker date="1464098900046" expanded="true" signature="18753:18764" placeholder="..." />
+            <marker date="1464098900046" expanded="true" signature="346349:346899" placeholder="..." />
+            <marker date="1464098900046" expanded="true" signature="346391:346547" placeholder="..." />
+            <marker date="1464098900046" expanded="true" signature="346589:346885" placeholder="..." />
+            <marker date="1464098900046" expanded="true" signature="346753:346820" placeholder="..." />
+            <marker date="1464098900046" expanded="true" signature="351070:351088" placeholder="..." />
+            <marker date="1464098900046" expanded="true" signature="421912:423056" placeholder="..." />
+            <marker date="1464098900046" expanded="true" signature="422100:422211" placeholder="..." />
+            <marker date="1464098900046" expanded="true" signature="422247:423023" placeholder="..." />
+            <marker date="1464098900046" expanded="true" signature="422698:422969" placeholder="..." />
+            <marker date="1464098900046" expanded="true" signature="423079:423303" placeholder="..." />
+            <marker date="1464098900046" expanded="true" signature="423916:424055" placeholder="..." />
+            <marker date="1464098900046" expanded="true" signature="424235:425351" placeholder="..." />
+            <marker date="1464098900046" expanded="true" signature="424320:425220" placeholder="..." />
+            <marker date="1464098900046" expanded="true" signature="425429:426283" placeholder="..." />
+            <marker date="1464098900046" expanded="true" signature="426305:426662" placeholder="..." />
+            <marker date="1464098900046" expanded="true" signature="431410:431458" placeholder="..." />
+            <marker date="1464098900046" expanded="true" signature="448339:449372" placeholder="..." />
+            <marker date="1464098900046" expanded="true" signature="448624:449142" placeholder="..." />
+            <marker date="1464098900046" expanded="true" signature="448775:448998" placeholder="..." />
+            <marker date="1464098900046" expanded="true" signature="449048:449122" placeholder="..." />
+            <marker date="1464098900046" expanded="true" signature="449216:449332" placeholder="..." />
+            <marker date="1464098900046" expanded="true" signature="449422:449779" placeholder="..." />
+            <marker date="1464098900046" expanded="true" signature="449894:450308" placeholder="..." />
+            <marker date="1464098900046" expanded="true" signature="450228:450291" placeholder="..." />
+            <marker date="1464098900046" expanded="true" signature="458336:460064" placeholder="..." />
+            <marker date="1464098900046" expanded="true" signature="458511:459634" placeholder="..." />
+            <marker date="1464098900046" expanded="true" signature="459146:459604" placeholder="..." />
+            <marker date="1464098900046" expanded="true" signature="459167:459308" placeholder="..." />
+            <marker date="1464098900046" expanded="true" signature="459405:459487" placeholder="..." />
+            <marker date="1464098900046" expanded="true" signature="459664:460045" placeholder="..." />
+            <marker date="1464098900046" expanded="true" signature="459709:459893" placeholder="..." />
+            <marker date="1464098900046" expanded="true" signature="459730:459873" placeholder="..." />
+            <marker date="1464098900046" expanded="true" signature="459936:460014" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/services/ngstore.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="31" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.6792455">
+          <caret line="75" column="51" selection-start-line="75" selection-start-column="51" selection-end-line="75" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/socket.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/apps/todo/todo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26923078">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.7530562">
+          <caret line="56" column="12" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="12" />
           <folding />
         </state>
       </provider>
