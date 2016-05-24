@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Materil | Angular Material Design Admin Template</title>
+  <meta name="description" content="material, material design, angular material, app, web app, responsive, responsive layout, admin, admin panel, admin dashboard, flat, flat ui, ui kit, AngularJS, ui route, charts, widgets, components" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  
+  <link rel="stylesheet" href="../libs/assets/animate.css/animate.css" type="text/css" />
+  <link rel="stylesheet" href="../libs/assets/font-awesome/css/font-awesome.css" type="text/css" />
+
+  <link rel="stylesheet" href="../libs/angular/angular-loading-bar/build/loading-bar.css" type="text/css" />
+  <link rel="stylesheet" href="../libs/angular/angular-material/angular-material.css" type="text/css" />
+
+  <link rel="stylesheet" href="styles/material-design-icons.css" type="text/css" />
+  <link rel="stylesheet" href="styles/app.min.css" type="text/css" />
+</head>
+<body ng-app="app">
+  <div class="app" ui-view ng-controller="AppCtrl"></div>
+
+  <script src="scripts/app.min.js"></script>
+
+</body>
+</html>
+
+
+salut tout le monde un grand chapeau pour tous qui cherchent améliorer leurs formations par les certifications c'est bien de continuer je vous en courage
+je veux mentionner une chose pour tous ceux qui veulent se certifier, depuis 2 ans a peut pres une seule organisation qui a racheté tous 
+les certifications qlq soit la specialité reseau telecom developpement et autres cette organisation s'appelle personview
+alors si vous cherchez des centres pour passer n'ipmorte quel examen vous n'avez qu'a se rendre sur leurs site, s'inscrire 
+et explorer tous les certification qu'elle propose et les centre de confiance dans lesquels vous pouvez passez vos examens
+sans tomber dans des centtres (escrots) dont plusieurs etudiants ont ete victimes
+alors vous trouverez tous les centres d'examens fiables, leurs adresses, les dates et haraires des examens et presque tous les details
+ 
