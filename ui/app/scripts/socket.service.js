@@ -3,34 +3,41 @@
  */
 angular.module('app').provider('SocketClient',[function(){
 
-    this.url ="http://localhost:8500/todo";
+    this.url ="http://localhost:8500/socket";
     this.connected = false;
     this.stompClient;
 
 
-    this.$get = ['$mdToast',function($mdToast){
+    this.$get = ['$mdToast','$http','$rootScope','$localStorage',function($mdToast,$http,$rootScope,$localStorage){
         var that = this;
 
         return {
-            subscribe :function(){
+            subscribe :function(topic){
                 var that = this;
+
                 var socket = new SockJS(that.url);
                 stompClient = Stomp.over(socket);
-                stompClient.connect({}, function(frame) {
-
-                    $mdToast.show(
-                        $mdToast.simple()
-                            .content('Connected....')
-                            .hideDelay(3000)
-                    );
-                    connected = true;
-                    stompClient.subscribe('/topic/todo', function(response){
+                var headers = {};
+                headers['Authorization'] = 'Bearer '+ $localStorage.token.access_token;
+                headers["X-Requested-With"] = 'XMLHttpRequest';
+                
+                stompClient.connect(headers, function(frame) {
+                     if( !$rootScope.connected ){
+                        $rootScope.connected = true;
                         $mdToast.show(
                             $mdToast.simple()
-                                .content(JSON.parse(response.body).content)
+                                .content('Connected Web Socket ....')
                                 .hideDelay(3000)
                         );
-                    });
+                        stompClient.subscribe('/topic/'+topic, function(response){
+                            $mdToast.show(
+                                $mdToast.simple()
+                                    .content(JSON.parse(response.body).content)
+                                    .hideDelay(3000)
+                            );
+                        });
+
+                    }
 
                 });
             },

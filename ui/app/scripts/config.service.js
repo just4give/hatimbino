@@ -1,4 +1,4 @@
-angular.module('app').factory('ServiceConfig',['$resource', function($resource){
+angular.module('app').factory('ServiceConfig',[ function(){
 
 	//TODO: change this url based on your environment
     var serviceUrl = "http://localhost:8500";

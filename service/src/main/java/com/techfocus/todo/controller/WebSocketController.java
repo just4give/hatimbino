@@ -10,7 +10,7 @@ import com.techfocus.todo.pojo.OutboundMessage;
 @Controller
 public class WebSocketController {
 
-	 @MessageMapping("/todo")
+	 @MessageMapping("/socket")
 	    @SendTo("/topic/todo")
 	    public OutboundMessage greeting(InboundMessage message) throws Exception {
 	        Thread.sleep(3000); // simulated delay

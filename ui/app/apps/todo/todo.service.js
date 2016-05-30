@@ -6,6 +6,7 @@ angular.module('app').factory('Todo',['$resource','ServiceConfig', function($res
     var serviceUrl = ServiceConfig.getUrl();
 
     return  $resource(serviceUrl+'/api/todo/:id', { id: '@id' }, {
+
         update: {
             method: 'PUT' // this method issues a PUT request
         }

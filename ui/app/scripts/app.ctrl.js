@@ -8,8 +8,8 @@
  * Controller of the app
  */
 angular.module('app')  
-  .controller('AppCtrl', ['$scope', '$translate', '$localStorage', '$window', '$document', '$location', '$rootScope', '$timeout', '$mdSidenav', '$mdColorPalette', '$anchorScroll',
-    function (             $scope,   $translate,   $localStorage,   $window,   $document,   $location,   $rootScope,   $timeout,   $mdSidenav,   $mdColorPalette,   $anchorScroll ) {
+  .controller('AppCtrl', ['$scope', '$translate', '$localStorage', '$window', '$document', '$location', '$rootScope', '$timeout', '$mdSidenav', '$mdColorPalette', '$anchorScroll','$mdToast','$state','AuthService',
+    function (             $scope,   $translate,   $localStorage,   $window,   $document,   $location,   $rootScope,   $timeout,   $mdSidenav,   $mdColorPalette,   $anchorScroll ,$mdToast,$state,AuthService) {
       // add 'ie' classes to html
       var isIE = !!navigator.userAgent.match(/MSIE/i) || !!navigator.userAgent.match(/Trident.*rv:11\./);
       isIE && angular.element($window.document.body).addClass('ie');
@@ -43,6 +43,32 @@ angular.module('app')
           show: false
         }
       }
+
+      /* user login related stuff */
+      $rootScope.$on('unauthorized',function(event, message){
+        $state.go('access.signin');
+      });
+      $rootScope.$on('forbidden',function(event, message){
+        $mdToast.show(
+            $mdToast.simple()
+                .content(message)
+                .hideDelay(3000)
+        );
+      });
+
+      if(!$rootScope.user){
+        console.log("reloading user");
+        AuthService.reloadLoggedinUser()
+            .then(function(data){
+              if(data.success){
+                $rootScope.user = data.user;
+
+              }
+            },function(err){
+
+            });
+      }
+    /* end of user login related stuff */
 
       $scope.setTheme = function(theme){
         $scope.app.setting.theme = theme;

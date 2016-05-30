@@ -33,3 +33,43 @@ angular.module('app')
  .config(['SocketClientProvider',function(SocketClientProvider){
 
 }]);
+
+angular.module('app').factory('httpRequestInterceptor',['$rootScope', '$q','$localStorage',
+    function ($rootScope,$q,$localStorage) {
+    return {
+        request: function (config) {
+
+            config.headers["X-Requested-With"] = 'XMLHttpRequest';
+            if(config.url && config.url.indexOf("/oauth/token")!= -1){
+
+                config.headers['Authorization'] = 'Basic '+ Base64.encode('clientapp:123456');
+            }else if($localStorage.token){
+                config.headers['Authorization'] = 'Bearer '+ $localStorage.token.access_token;
+            }
+
+
+            return config;
+        },
+        responseError: function(rejection) {
+            // do something on error
+
+            if(rejection.status === 401 ){
+                console.log('Unauthorized access 401');
+                $localStorage.token = undefined;
+                $rootScope.$broadcast('unauthorized','You are not authorized');
+
+
+            }else if(rejection.status === 403 ){
+                console.log('Unauthorized access 403');
+                $rootScope.$broadcast('forbidden','You are not authorized');
+            }
+            return $q.reject(rejection);
+        }
+    };
+}]);
+
+angular.module('app').config(function ($httpProvider) {
+
+    $httpProvider.interceptors.push('httpRequestInterceptor');
+});
+
