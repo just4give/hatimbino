@@ -34,10 +34,10 @@ angular.module('app')
 
         var routeRoleChecks = {
 
-          auth: function(AuthService) {
+          auth: ['AuthService',function(AuthService) {
             console.log('calling AuthService')
             return AuthService.isAuthorized();
-          }
+          }]
         }
 
         $urlRouterProvider
@@ -65,14 +65,13 @@ angular.module('app')
               data : { title: 'Dashboard', folded: true },
               controller:'AppCtrl',
               resolve: {
-                //load: load(['scripts/controllers/chart.js', 'scripts/controllers/vectormap.js'])
-                auth: routeRoleChecks.auth,
-                loadMyFiles: function ($ocLazyLoad) {
+              auth: routeRoleChecks.auth,
+              loadMyFiles: ['$ocLazyLoad',function ($ocLazyLoad) {
                   return $ocLazyLoad.load({
                     name: 'app',
                     files: ['scripts/controllers/chart.js', 'scripts/controllers/vectormap.js']
                   })
-                }
+                }]
               }
             })
             .state('app.analysis', {
@@ -504,6 +503,7 @@ angular.module('app')
                       } );
                     });
                     deferred.resolve();
+
                     return callback ? promise.then(function(){ return callback(); }) : promise;
                 }]
             }

@@ -2,11 +2,22 @@ app.factory('todoStorage', ['ngStore', function (ngStore) {
     return ngStore.model('todo');
 }]);
 
-app.controller('TodoCtrl', ['$scope', '$location', '$filter', 'todoStorage', function($scope, $location, $filter, todoStorage) {
-    var todos = $scope.todos = todoStorage.findAll();
+app.controller('TodoCtrl', ['$scope', '$location', '$filter', 'todoStorage','$log','$mdToast', 'Todo','$timeout','$localStorage',
+    function($scope, $location, $filter, todoStorage,$log,$mdToast,Todo,$timeout,$localStorage) {
+
+
+
+    Todo.query(function(data){
+        $log.debug("Todo:",data);
+        $scope.todos = data;
+        $scope.remainingCount = $filter('filter')(data, {completed: false}).length;
+
+    })
+
+
 
     $scope.newTodo = '';
-    $scope.remainingCount = $filter('filter')(todos, {completed: false}).length;
+
 
     $scope.location = $location;
 
@@ -24,7 +35,7 @@ app.controller('TodoCtrl', ['$scope', '$location', '$filter', 'todoStorage', fun
             return;
         }
 
-        var item = {
+        /*var item = {
             id: todoStorage.nextId(),
             title: newTodo,
             completed: false
@@ -32,7 +43,20 @@ app.controller('TodoCtrl', ['$scope', '$location', '$filter', 'todoStorage', fun
         todos.push( todoStorage.create(item) );
 
         $scope.newTodo = '';
-        $scope.remainingCount++;
+        $scope.remainingCount++;*/
+
+        //new code added by appstacksolutions.com
+        var todo = new Todo();
+
+        todo.title = newTodo;
+        todo.completed=false;
+        todo.$save(function(data){
+            $scope.todos.push(data);
+            $scope.newTodo = '';
+            $scope.remainingCount++;
+
+        })
+
     };
 
     $scope.editTodo = function (todo) {
@@ -49,7 +73,11 @@ app.controller('TodoCtrl', ['$scope', '$location', '$filter', 'todoStorage', fun
             $scope.removeTodo(todo);
         }
 
-        todoStorage.update(todo);
+        //todoStorage.update(todo);
+        //new code added by appstacksolutions.com
+        todo.$update(function(data){
+            $log.debug("Todo updated");
+        })
     };
 
     $scope.revertEditing = function (todo) {
@@ -58,31 +86,51 @@ app.controller('TodoCtrl', ['$scope', '$location', '$filter', 'todoStorage', fun
     };
 
     $scope.removeTodo = function (todo) {
-        $scope.remainingCount -= todo.completed ? 0 : 1;
+       /* $scope.remainingCount -= todo.completed ? 0 : 1;
         todos.splice(todos.indexOf(todo), 1);
-        todoStorage.destroy(todo);
+        todoStorage.destroy(todo);*/
+
+        //new code added by appstacksolutions.com
+        todo.$delete(function(){
+            $scope.remainingCount -= todo.completed ? 0 : 1;
+            $scope.todos.splice($scope.todos.indexOf(todo), 1);
+        })
+
     };
 
     $scope.todoCompleted = function (todo) {
-        $scope.remainingCount += todo.completed ? -1 : 1;
-        todoStorage.update(todo);
+       /* $scope.remainingCount += todo.completed ? -1 : 1;
+        todoStorage.update(todo);*/
+
+        //new code added by appstacksolutions.com
+        todo.$update(function(data){
+            $scope.remainingCount += todo.completed ? -1 : 1;
+        })
     };
 
     $scope.clearCompletedTodos = function () {
-        todos.filter(function (todo) {
+        $scope.todos.filter(function (todo) {
             if(todo.completed){
-                todos.splice(todos.indexOf(todo), 1);
-                todoStorage.destroy(todo);
+                /*todos.splice(todos.indexOf(todo), 1);
+                todoStorage.destroy(todo);*/
+                //new code added by appstacksolutions.com
+                todo.$delete(function(){
+
+                    $scope.todos.splice($scope.todos.indexOf(todo), 1);
+                })
             }
         });
     };
 
     $scope.markAll = function (completed) {
-        todos.forEach(function (todo) {
+        $scope.todos.forEach(function (todo) {
             todo.completed = completed;
-            todoStorage.update(todo);
+            todo.$update(function(){
+                $scope.remainingCount--;
+            })
+
         });
-        $scope.remainingCount = !completed ? todos.length : 0;
+        //$scope.remainingCount = !completed ? todos.length : 0;
     };
 }]);
 

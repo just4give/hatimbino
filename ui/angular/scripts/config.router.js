@@ -13,14 +13,36 @@ angular.module('app')
       function ( $rootScope,   $state,   $stateParams ) {
         $rootScope.$state = $state;
         $rootScope.$stateParams = $stateParams;
+
+        $rootScope.$on('$stateChangeError', function(event, toState, toParams, fromState, fromParams, rejection) {
+
+
+          if(rejection === 'not authorized') {
+
+            $state.go('access.signin');
+          }
+        })
+
+
       }
     ]
   )
   .config(
     [          '$stateProvider', '$urlRouterProvider', 'MODULE_CONFIG',
       function ( $stateProvider,   $urlRouterProvider,  MODULE_CONFIG ) {
+
+
+        var routeRoleChecks = {
+
+          auth: ['AuthService',function(AuthService) {
+            console.log('calling AuthService')
+            return AuthService.isAuthorized();
+          }]
+        }
+
         $urlRouterProvider
           .otherwise('/app/dashboard');
+
         $stateProvider
           .state('app', {
             abstract: true,
@@ -41,7 +63,16 @@ angular.module('app')
               url: '/dashboard',
               templateUrl: 'views/pages/dashboard.html',
               data : { title: 'Dashboard', folded: true },
-              resolve: load(['scripts/controllers/chart.js','scripts/controllers/vectormap.js'])
+              controller:'AppCtrl',
+              resolve: {
+              auth: routeRoleChecks.auth,
+              loadMyFiles: ['$ocLazyLoad',function ($ocLazyLoad) {
+                  return $ocLazyLoad.load({
+                    name: 'app',
+                    files: ['scripts/controllers/chart.js', 'scripts/controllers/vectormap.js']
+                  })
+                }]
+              }
             })
             .state('app.analysis', {
               url: '/analysis',
@@ -59,7 +90,7 @@ angular.module('app')
               templateUrl: 'apps/todo/todo.html',
               data : { title: 'Todo', theme: { primary: 'indigo-800'} },
               controller: 'TodoCtrl',
-              resolve: load('apps/todo/todo.js')
+              resolve: load(['apps/todo/todo.js','apps/todo/todo.service.js'])
             })
             .state('app.todo.list', {
                 url: '/{fold}'
@@ -425,7 +456,9 @@ angular.module('app')
             })
             .state('access.signin', {
               url: '/signin',
-              templateUrl: 'views/pages/signin.html'
+              templateUrl: 'views/pages/signin.html',
+              controller: 'SignInCtrl',
+              resolve: load(['apps/signin/signincontroller.js'])
             })
             .state('access.signup', {
               url: '/signup',
@@ -448,6 +481,7 @@ angular.module('app')
                   function( $ocLazyLoad, $q ){
                     var deferred = $q.defer();
                     var promise  = false;
+
                     srcs = angular.isArray(srcs) ? srcs : srcs.split(/\s+/);
                     if(!promise){
                       promise = deferred.promise;
@@ -469,6 +503,7 @@ angular.module('app')
                       } );
                     });
                     deferred.resolve();
+
                     return callback ? promise.then(function(){ return callback(); }) : promise;
                 }]
             }

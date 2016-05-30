@@ -16,10 +16,10 @@
       <div class="m-b text-sm">
         Sign in with your {{app.name}} Account
       </div>
-      <form name="form">
+      <form name="form" ng-submit="signin()">
         <div class="md-form-group float-label">
-          <input type="email" class="md-input" ng-model="user.email" required>
-          <label>Email</label>
+          <input type="text" class="md-input" ng-model="user.email" required>
+          <label>Username</label>
         </div>
         <div class="md-form-group float-label">
           <input type="password" class="md-input" ng-model="user.password" required>
@@ -30,7 +30,7 @@
             <input type="checkbox"><i class="indigo"></i> Keep me signed in
           </label>
         </div>
-        <button md-ink-ripple type="submit" class="md-btn md-raised pink btn-block p-h-md">Sign in</button>
+        <button md-ink-ripple type="submit" class="md-btn md-raised pink btn-block p-h-md" ng-click="signin()">Sign in</button>
       </form>
     </div>
 

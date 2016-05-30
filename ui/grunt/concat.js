@@ -25,9 +25,11 @@ module.exports = {
       'libs/angular/angular-translate-loader-static-files/angular-translate-loader-static-files.js',
       'libs/angular/angular-translate-storage-cookie/angular-translate-storage-cookie.js',
       'libs/angular/angular-translate-storage-local/angular-translate-storage-local.js',
-     
       'libs/angular/angular-loading-bar/build/loading-bar.js',
-      
+      'libs/angular/base64/base64.js',
+      'libs/socket/sockjs-0.3.4.js',
+      'libs/socket/stomp.js',
+
       'app/scripts/app.js',
       'app/scripts/*.js',
       'app/scripts/directives/*.js',

@@ -68,8 +68,8 @@ angular.module('app').factory('httpRequestInterceptor',['$rootScope', '$q','$loc
     };
 }]);
 
-angular.module('app').config(function ($httpProvider) {
+angular.module('app').config(['$httpProvider',function ($httpProvider) {
 
     $httpProvider.interceptors.push('httpRequestInterceptor');
-});
+}]);
 
